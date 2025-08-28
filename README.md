@@ -1,3 +1,5 @@
+<img src="Figuras/logo_unb.jpg" alt="descrição da figura" width="400"/>
+
 # MÉTODOS NUMÉRICOS EM CIÊNCIAS MECÂNICAS
 
 **Aluno:** Carlos Eduardo Leite de Oliveira
@@ -18,4 +20,14 @@ Os códigos apresentados nesse repositório são todos feitos em linguagem de pr
 - Acessar bibliotecas como NumPy, pandas, Matplotlib, TensorFlow, etc., sem instalação local.
 
 Para utilizar o Google Colab, basta acessar o site https://colab.research.google.com e fazer login com sua conta do Google. Com isso, é possível criar notebooks para cada atividade, desenvolver os códigos e executá-los em qualquer máquina com acesso à internet.
+
+## Código 1 - Sedimentação de uma esfera em um fluido viscoso
+
+## Código 2 - 
+
+## Código 3 - 
+
+## Código 4 - 
+
+## Código 5 - 
 
