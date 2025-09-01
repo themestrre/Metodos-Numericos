@@ -23,6 +23,15 @@ Para utilizar o Google Colab, basta acessar o site https://colab.research.google
 
 ## Código 1 - Sedimentação de uma esfera em um fluido viscoso
 
+O código apresentado tem por objetivo a resolução de sedimentação de uma esfera em um fluido viscoso onde será aplicado o Método de Runge-Kutta de 4a ordem. Como é apresentado no esquematico da figura a seguir.
+
+
+
+
+
+
+
+
 ## Código 2 - 
 
 ## Código 3 - 
