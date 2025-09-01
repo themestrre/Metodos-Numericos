@@ -52,6 +52,13 @@ $$
 
 ### Resultados
 
+Para resolver a sedimentaçãoo de uma esfera em baixo Reynolds na sua forma adimensional utilizando o método de Runge-Kutta de quarta ordem clássico para realizar as seguintes análises:
+
+
+
+
+
+
 ## Código 2 - 
 
 ## Código 3 - 
