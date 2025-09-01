@@ -23,14 +23,34 @@ Para utilizar o Google Colab, basta acessar o site https://colab.research.google
 
 ## Código 1 - Sedimentação de uma esfera em um fluido viscoso
 
-O código apresentado tem por objetivo a resolução de sedimentação de uma esfera em um fluido viscoso onde será aplicado o Método de Runge-Kutta de 4a ordem. Como é apresentado no esquematico da figura a seguir.
+### Teoria
+O código apresentado tem por objetivo a resolução de sedimentação de uma esfera em um fluido viscoso onde será aplicado o Método de Runge-Kutta de 4a ordem. Como é apresentado no esquematico da Figura 1.
 
+<p align="center">
+  <img src="Figuras/Fig1.png" alt="Minha Figura" width="400"/>
+  <br>
+  <em>Figura 1: Esquemático do problema de sedimentação.</em>
+</p>
 
+Para esse problema é considerando a força de arrasto, empuxo e peso. A segunda lei de Newton aplicada a este problema é:
 
+$$
+m_p \frac{dv_z}{dt} = -6 \pi \eta a v_z - \frac{9}{4} \pi \rho_r a^2 v_z^2 + \frac{4}{3} \pi a^3 \Delta \rho g
+$$
 
+Na sua forma adimensional é:
 
+$$
+\mathrm{St} \frac{d v_{z}^{\ast}}{d t^{\ast}} = 1 - v_{z}^{\ast}
+$$
 
+A solução exata é dada por:
 
+$$
+v_{z}^{\ast}(t) = 1 - e^{-t/\mathrm{St}}
+$$
+
+### Resultados
 
 ## Código 2 - 
 
