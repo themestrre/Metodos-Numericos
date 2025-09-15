@@ -54,9 +54,42 @@ $$
 
 Para resolver a sedimentaçãoo de uma esfera em baixo Reynolds na sua forma adimensional utilizando o método de Runge-Kutta de quarta ordem clássico para realizar as seguintes análises:
 
+1.   Para o caso de $Re \to 0$ compare a solução analítica com a solução exata para diferentes valores de $St$:
 
+<p align="center">
+  <img src="Figuras/Fig_prog01_1.png" alt="Minha Figura" width="600"/>
+  <br>
+</p>
+ 
+2.   Para um dado cenário varie o passo de tempo e mostre como o refinamento dessa quantidade afeta a qualidade da solução:
 
+<p align="center">
+  <img src="Figuras/Fig_prog01_2.png" alt="Minha Figura" width="600"/>
+  <br>
+</p>
 
+3.   Para um pequeno efeito inercial no fluido ($Re \neq 0$):
+
+<p align="center">
+  <img src="Figuras/Fig_prog01_3.png" alt="Minha Figura" width="600"/>
+  <br>
+</p>
+
+4.   Validação do código com base na solução exata para o problema:
+
+<p align="center">
+  <img src="Figuras/Fig_prog01_4.png" alt="Minha Figura" width="600"/>
+  <br>
+</p>
+
+5.   Plote do comportamento da solução numérica para diferentes valores de $\text{Re}_s$ e mostre como a solução numérica se desvia do limite assintótico em que $Re \to 0$.
+
+<p align="center">
+  <img src="Figuras/Fig_prog01_5.png" alt="Minha Figura" width="600"/>
+  <br>
+</p>
+
+Todos os resultados apresentados podem ser reproduzidos a partir do código disponibilizado no [📂 Programa 01](https://github.com/themestrre/Metodos-Numericos/tree/main/Programas/Programa%2001)
 
 
 ## Código 2 - 
