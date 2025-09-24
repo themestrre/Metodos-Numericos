@@ -92,7 +92,60 @@ Para resolver a sedimentaçãoo de uma esfera em baixo Reynolds na sua forma adi
 Todos os resultados apresentados podem ser reproduzidos a partir do código disponibilizado no [📂 Programa 01](https://github.com/themestrre/Metodos-Numericos/tree/main/Programas/Programa%2001)
 
 
-## Código 2 - 
+## Código 2 - Aplicação dos Métodos da bisecção e da falsa posição
+
+### Teoria
+
+Existem diversos métodos numéricos destinados à determinação dos zeros de funções, cada um com suas próprias vantagens e desvantagens. Neste código, são apresentados o método da bisseção e o da falsa posição, que ilustram bem essas diferenças e suas respectivas aplicações.
+
+No método da bisseção o intervalo é dividido pela metade a cada iteração. Com a extremidade inferior $(x_l)$ e a extremidade superior $(x_u)$, o ponto médio é:
+
+$$
+    x_m = \frac{x_l + x_u}{2}.
+$$
+
+Se $f(x_m)\,f(x_l) \leq 0$, então a raiz está no intervalo $[x_l, x_m]$, de modo que atualizamos $x_u = x_m$. Caso contrário, a raiz está em $[x_m, x_u]$, e atualizamos $x_l = x_m$. O processo se repete até que a tolerância desejada seja atingida.
+
+Para o caso do método da falsa posição leva em consideração os valores da função nas extremidades do intervalo para obter uma melhor aproximação da raiz. A estimativa é dada por:
+
+$$
+    x_m = x_u - \frac{f(x_u)\,(x_l - x_u)}{f(x_l) - f(x_u)}.
+$$
+
+Em seguida, o intervalo é atualizado de maneira análoga ao método da bisseção, com base no sinal do produto $f(x_m)\,f(x_l)$.
+
+### Resultados
+
+Foram implementados os métodos da bisseção e da falsa posição, obtendo resultados numéricos e gráficos comparativos entre eles, os quais são apresentados a seguir.
+
+<p align="center">
+  <img src="Figuras/Fig_prog02_1.png" alt="Minha Figura" width="600"/>
+  <br>
+</p>
+
+<p align="center">
+  <img src="Figuras/Fig_prog02_2.png" alt="Minha Figura" width="600"/>
+  <br>
+</p>
+
+<p align="center">
+  <img src="Figuras/Fig_prog02_3.png" alt="Minha Figura" width="600"/>
+  <br>
+</p>
+
+<p align="center">
+  <img src="Figuras/Fig_prog02_4.png" alt="Minha Figura" width="600"/>
+  <br>
+</p>
+
+<p align="center">
+  <img src="Figuras/Fig_prog02_5.png" alt="Minha Figura" width="600"/>
+  <br>
+</p>
+
+
+Todos os resultados apresentados podem ser reproduzidos a partir do código disponibilizado no [📂 Programa 02](https://github.com/themestrre/Metodos-Numericos/blob/main/Programas/Programa%2002)
+
 
 ## Código 3 - 
 
