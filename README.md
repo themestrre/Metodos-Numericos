@@ -147,7 +147,51 @@ Foram implementados os métodos da bisseção e da falsa posição, obtendo resu
 Todos os resultados apresentados podem ser reproduzidos a partir do código disponibilizado no [📂 Programa 02](https://github.com/themestrre/Metodos-Numericos/blob/main/Programas/Programa%2002)
 
 
-## Código 3 - 
+## Código 3 - Aplicação do Método da secante e Müller
+
+### Teoria
+
+O método da secante propõe uma aproximação do valor da derivada da função utilizando um esquema simples e direto de diferenças finitas, onde aproxima a raiz usando dois pontos anteriores:
+
+$$
+x_{i+1} = x_i - \frac{f(x_i)\.(x_{i-1} - x_i)}{f(x_{i-1}) - f(x_i)}
+$$
+
+O método de Müller, concebido para ser uma extensão do método da secante, em que ao invés de seccionarmos a função f(x), cuja raiz desejamos obter, por uma reta utilizando dois pontos, fazemos isso por meio de uma parábola utilizando três pontos: 
+
+$$
+x_{i+1} = x_i - \frac{2c}{b \pm \sqrt{b^2 - 4ac}}
+$$
+
+Onde:
+
+$$
+a = \frac{\delta_1 - \delta_0}{h_1 - h_0}, 
+\quad b = ah_1 + \delta_1, 
+\quad c = f(x_2)
+$$
+
+$$
+h_0 = x_1 - x_0, 
+\quad h_1 = x_2 - x_1, 
+\quad \delta_0 = \frac{f(x_1) - f(x_0)}{x_1 - x_0}, 
+\quad \delta_1 = \frac{f(x_2) - f(x_1)}{x_2 - x_1}
+$$
+
+Para a análise de comparação de forma graficamente entre o método da Secante e Müller, temos na Figura 2.
+
+
+<p align="center">
+  <img src="Figuras/Fig2.png" alt="Minha Figura" width="600"/>
+  <br>
+  <em>Figura 2: Diferença entre o método da secante (a) e o método de Müller (b).</em>
+</p>
+
+
+### Resultados
+
+Para esse caso vamos aplicar os métodos da Secante e Müller para fazer suas comparações e encontrar a raiz de um polinômio dado. A comparação será baseada no erro relativo (%) a cada iteração até que a tolerância desejada seja atingida.
+
 
 ## Código 4 - 
 
