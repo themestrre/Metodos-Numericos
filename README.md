@@ -192,6 +192,12 @@ Para a análise de comparação de forma graficamente entre o método da Secante
 
 Para esse caso vamos aplicar os métodos da Secante e Müller para fazer suas comparações e encontrar a raiz de um polinômio dado. A comparação será baseada no erro relativo (%) a cada iteração até que a tolerância desejada seja atingida.
 
+<p align="center">
+  <img src="Figuras/Fig_prog03_1.png" alt="Minha Figura" width="600"/>
+  <br>
+</p>
+
+Todos os resultados apresentados podem ser reproduzidos a partir do código disponibilizado no [📂 Programa 03](https://github.com/themestrre/Metodos-Numericos/tree/main/Programas/Programa%2003)
 
 ## Código 4 - 
 
