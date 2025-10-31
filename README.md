@@ -92,7 +92,7 @@ Para resolver a sedimentaçãoo de uma esfera em baixo Reynolds na sua forma adi
 Todos os resultados apresentados podem ser reproduzidos a partir do código disponibilizado no [📂 Programa 01](https://github.com/themestrre/Metodos-Numericos/tree/main/Programas/Programa%2001)
 
 
-## Código 2 - Implementação do estudo de caso: reator contínuo de tanque agitado (CSTR)
+## Código 2 - Estudo de caso: reator contínuo de tanque agitado (CSTR)
 
 ### Teoria
 
@@ -128,14 +128,14 @@ O código utiliza o método de Newton-Raphson para achar o estado estacionário 
 Na tabela abaixo, temos para algumas condições de entrada, como a concentração e temperatura de saída se comportam.
 
 <p align="center">
-  <img src="Figuras/Fig_prog02_1.png" alt="Minha Figura" width="600"/>
+  <img src="Figuras/Fig_prog_02_1.png" alt="Minha Figura" width="600"/>
   <br>
 </p>
 
 O código faz uma varredura contínua em uma faixa de valores de entrada (cA₀ e T₀) e plota dois mapas de contorno, o primeiro representa a concentração de saída cA (mostra como a concentração final muda conforme as condições iniciais) e o segundo a temperatura de saída T (mostra como a temperatura final do reator varia).
 
 <p align="center">
-  <img src="Figuras/Fig_prog02_2.png" alt="Minha Figura" width="600"/>
+  <img src="Figuras/Fig_prog_02_2.png" alt="Minha Figura" width="800"/>
   <br>
 </p>
 
