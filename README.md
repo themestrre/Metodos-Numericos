@@ -92,7 +92,52 @@ Para resolver a sedimentaçãoo de uma esfera em baixo Reynolds na sua forma adi
 Todos os resultados apresentados podem ser reproduzidos a partir do código disponibilizado no [📂 Programa 01](https://github.com/themestrre/Metodos-Numericos/tree/main/Programas/Programa%2001)
 
 
-## Código 2 - 
+## Código 2 - Implementação do estudo de caso: reator contínuo de tanque agitado (CSTR)
+
+### Teoria
+
+O comportamento do CSTR pode ser descrito por dois balanços fundamentais. O primeiro é pela conservação da massa e o segundo é pela utilização da primeira lei da termodinâmica.
+
+Balanço de Massa:
+
+$$
+c_{A_{in}} - c_A = \tau k(T) c_A
+$$
+
+Essa equação expressa a conservação da massa para o reagente A, relacionando a diferença entre a concentração de entrada e saída com a taxa de reação química no interior do tanque.
+
+Balanço de Energia:
+
+$$
+\rho c_p \dot{Q}(T_e - T) - U A (T - T_c) = -\Delta H V k(T) c_A
+$$
+
+Essa equação representa a Primeira Lei da Termodinâmica, aplicando-se à energia do sistema. O termo à esquerda contabiliza o calor trocado com o fluxo de entrada e o calor removido pela camisa de resfriamento, enquanto o termo à direita representa o calor liberado pela reação.
+
+A não linearidade desse sistema se faz por meio do modelo que iremos utilizar para modelar a cinética da
+reação e segue a lei de Arrhenius:
+
+$$
+k(T) = k_0 \exp\left(-\frac{E}{R T}\right)
+$$
+
+### Resultados
+
+O código utiliza o método de Newton-Raphson para achar o estado estacionário do reator — isto é, a concentração e temperatura de saída (cA e T) para cada condição de entrada (cA₀ e T₀).
+
+Na tabela abaixo, temos para algumas condições de entrada, como a concentração e temperatura de saída se comportam.
+
+<p align="center">
+  <img src="Figuras/Fig_prog02_1.png" alt="Minha Figura" width="600"/>
+  <br>
+</p>
+
+O código faz uma varredura contínua em uma faixa de valores de entrada (cA₀ e T₀) e plota dois mapas de contorno, o primeiro representa a concentração de saída cA (mostra como a concentração final muda conforme as condições iniciais) e o segundo a temperatura de saída T (mostra como a temperatura final do reator varia).
+
+<p align="center">
+  <img src="Figuras/Fig_prog02_2.png" alt="Minha Figura" width="600"/>
+  <br>
+</p>
 
 Todos os resultados apresentados podem ser reproduzidos a partir do código disponibilizado no [📂 Programa 02](https://github.com/themestrre/Metodos-Numericos/blob/main/Programas/Programa%2002)
 
@@ -151,5 +196,12 @@ Todos os resultados apresentados podem ser reproduzidos a partir do código disp
 
 ## Código 4 - 
 
+### Teoria
+
+### Resultados
+
 ## Código 5 - 
 
+### Teoria
+
+### Resultados
