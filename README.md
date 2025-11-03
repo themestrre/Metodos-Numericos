@@ -198,7 +198,57 @@ Todos os resultados apresentados podem ser reproduzidos a partir do código disp
 
 ### Teoria
 
+A equação unidimensional de condução de calor (com geração interna) é:
+
+$$
+\frac{\partial T}{\partial t} = \alpha \frac{\partial^2 T}{\partial x^2} + \frac{\dot{q}}{\rho c_p},
+\qquad \alpha = \frac{k}{\rho c_p}
+$$
+
+Para a simplificação para o caso sem a geração interna ($\dot{q} = 0$) é:
+
+$$
+\frac{\partial T}{\partial t} = \alpha \frac{\partial^2 T}{\partial x^2} 
+$$
+
+Para resolver o problema, aplicam-se condições de contorno (por exemplo, convecção na superfície com número de Biot (Bi) e uma condição inicial: $T(x,0) = T_i$.
+
+A solução analítica é obtida pelo método da separação de variáveis, resultando na seguinte forma adimensional:
+
+![equacao](https://latex.codecogs.com/png.latex?\theta(x^*,Fo)=\sum_{n=1}^{\infty}\left[\frac{4\sin(\lambda_n)}{2\lambda_n+\sin(2\lambda_n)}\right]\cos(\lambda_nx^*)e^{-\lambda_n^2Fo})
+
+Onde:
+
+![lambda](https://latex.codecogs.com/png.latex?\lambda_n=Bi\cot(\lambda_n))
+
 ### Resultados
+
+Como a solução analítica é complexa, podemos resolver o mesmo problema numericamente. A ideia do método das diferenças finitas é aproximar derivadas por diferenças entre valores de temperatura em pontos discretos.
+
+Para análise dos resultados, temos a seguir algumas curvas de comparações de perfis, o decaimento adimensional e o campo de temperatura. 
+
+<p align="center">
+  <img src="Figuras/Fig_prog04_1.png" alt="Minha Figura" width="1000"/>
+  <br>
+  <em>Figura 1: Comparação de curvas com e sem geração interna.</em>
+</p>
+
+<p align="center">
+  <img src="Figuras/Fig_prog04_2.png" alt="Minha Figura" width="1000"/>
+  <br>
+  <em>Figura 2: Decaimento com e sem geração interna.</em>
+</p>
+
+<p align="center">
+  <img src="Figuras/Fig_prog04_3.png" alt="Minha Figura" width="1000"/>
+  <br>
+  <em>Figura 3: Campo de temperatura com e sem geração interna.</em>
+</p>
+
+Obs.: No código apresentado no link existe algumas animações de resultados que são apresentados no repositório.
+
+Todos os resultados apresentados podem ser reproduzidos a partir do código disponibilizado no [📂 Programa 04](https://github.com/themestrre/Metodos-Numericos/tree/main/Programas/Programa%2004)
+
 
 ## Código 5 - 
 
