@@ -194,7 +194,7 @@ Para esse caso vamos aplicar os métodos da Secante e Müller para fazer suas co
 
 Todos os resultados apresentados podem ser reproduzidos a partir do código disponibilizado no [📂 Programa 03](https://github.com/themestrre/Metodos-Numericos/tree/main/Programas/Programa%2003)
 
-## Código 4 - 
+## Código 4 - Determinando a distribuição de temperatura no combustível sólido de um reator nuclear
 
 ### Teoria
 
@@ -250,7 +250,44 @@ Obs.: No código apresentado no link existe algumas animações de resultados qu
 Todos os resultados apresentados podem ser reproduzidos a partir do código disponibilizado no [📂 Programa 04](https://github.com/themestrre/Metodos-Numericos/tree/main/Programas/Programa%2004)
 
 
-## Código 5 - 
+## Código 5 - Otimização multidimensional
+
+### Teoria
+
+A ideia dos programas é construir uma função f(x,y) contínua, monotônica e partindo de um ponto inicial encontra o ponto ótimo mais próximo, utilizando quatro métodos diferentes. A função f(x,y) escolhida é:
+
+$$
+f(x,y) = 5x - 3y + 2x^{2} - x^{4} + xy - y^{2}
+$$
+
+**Aclive Máximo**: É um método iterativo para minimizar funções diferenciáveis, ou seja, a ideia central é mover o ponto na direção oposta ao gradiente da função, pois o gradiente indica a direção de maior crescimento local. O método é simples, mas pode ser lento, especialmente em funções mal condicionadas.
+
+**Gradientes Conjugados (Método de Fletcher–Reeves)**: Usado principalmente para problemas de minimização quadráticos grandes ou sistemas lineares simétricos e definidos positivos.Em vez de seguir sempre o gradiente, o método gera direções conjugadas, que evitam revisitar direções anteriores, acelerando a convergência. 
+
+**Método de Newton**: Baseia-se na aproximação quadrática local da função objetivo usando derivadas de segunda ordem (Hessiana). É mais rápido que métodos de primeira ordem quando a Hessiana é bem comportada que tem convergência quadrática perto do mínimo, mas exige cálculo e inversão da Hessiana, o que pode ser bastante caro.
+
+**Método de Levenberg–Marquardt**: Voltado mais para os problemas de ajuste não linear, que é basicamente uma interpolação entre o método de Gauss–Newton e o método do gradiente, ou seja, adiciona um termo de amortecimento que torna a matriz mais estável quando a Hessiana aproximada é mal condicionada.
+
+### Resultados
+
+O código resolve o mesmo problema de otimização multidimensional utilizando os quatro métodos apresentados na fundamentação teórica: aclive máximo, gradientes conjugados, Newton e Levenberg–Marquardt. As comparações entre os resultados obtidos por cada método são apresentadas a seguir.
+
+<p align="center">
+  <img src="Figuras/Fig_prog05_1.png" alt="Minha Figura" width="800"/>
+  <br>
+</p>
+
+Para gerar a Figura 1, é criada uma tabela contendo os valores necessários para traçar as curvas de nível e o caminho de busca até o ponto ótimo. Esses dados são armazenados em um arquivo .txt, apresentado a seguir.
+
+<p align="center">
+  <img src="Figuras/Fig_prog05_2.png" alt="Minha Figura" width="600"/>
+  <br>
+  <em>Figura 1: Curvas de Nível e Trajetória de Busca.</em>
+</p>
+
+Todos os resultados apresentados podem ser reproduzidos a partir do código disponibilizado no [📂 Programa 05](https://github.com/themestrre/Metodos-Numericos/tree/main/Programas/Programa%2005)
+
+## Código 6 - 
 
 ### Teoria
 
