@@ -304,6 +304,7 @@ O código resolve o problema por meio do método de Runge–Kutta de quarta orde
   <br>
 </p>
 
+Todos os resultados apresentados podem ser reproduzidos a partir do código disponibilizado no [📂 Programa 06](https://github.com/themestrre/Metodos-Numericos/tree/main/Programas/Programa%2006)
 
 
 
