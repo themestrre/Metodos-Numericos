@@ -287,8 +287,14 @@ Para gerar a Figura 1, é criada uma tabela contendo os valores necessários par
 
 Todos os resultados apresentados podem ser reproduzidos a partir do código disponibilizado no [📂 Programa 05](https://github.com/themestrre/Metodos-Numericos/tree/main/Programas/Programa%2005)
 
-## Código 6 - 
+## Código 6 - Resposta transiente de reatores (Método de Runge-Kutta)
 
 ### Teoria
 
+Em sistemas de reatores químicos, a resposta transiente descreve a evolução temporal das variáveis de estado do sistema, como concentração, temperatura ou conversão, desde uma condição inicial até o regime permanente.
+
+Em reatores do tipo CSTR, o comportamento dinâmico é obtido a partir dos balanços de massa, que resultam em equações diferenciais ordinárias (EDOs). No caso de múltiplos reatores interligados, como no sistema estudado, essas equações tornam-se acopladas, pois a saída de um reator influencia diretamente a entrada de outros.
+
 ### Resultados
+
+O código resolve o problema por meio do método de Runge–Kutta de quarta ordem, permitindo determinar a resposta transiente de cada reator a partir dos dados iniciais apresentadas no Código 3. A figura a seguir apresenta a resposta transiente de cada reator, conforme solicitado.
