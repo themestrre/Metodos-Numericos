@@ -300,7 +300,7 @@ Em reatores do tipo CSTR, o comportamento dinâmico é obtido a partir dos balan
 O código resolve o problema por meio do método de Runge–Kutta de quarta ordem, permitindo determinar a resposta transiente de cada reator a partir dos dados iniciais apresentadas no Código 3. A figura a seguir apresenta a resposta transiente de cada reator, conforme solicitado.
 
 <p align="center">
-  <img src="Figuras/Fig_prog06_1.png" alt="Minha Figura" width="600"/>
+  <img src="Figuras/Fig_prog_06_1.png" alt="Minha Figura" width="600"/>
   <br>
 </p>
 
